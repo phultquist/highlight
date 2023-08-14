@@ -67,3 +67,9 @@
 ### Minor Changes
 
 - Add `serviceName` and `serviceVersion` as optional parameters to `NodeOptions`
+
+## 3.2.0
+
+### Minor Changes
+
+- Add `metadata` option for `consumeError` and derivative functions.
