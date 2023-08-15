@@ -25,6 +25,7 @@ type ClickhouseSession struct {
 	SecureID           string
 	Identified         bool
 	Identifier         string
+	IP                 string
 	City               string
 	Country            string
 	OSName             string
@@ -110,6 +111,7 @@ func (client *Client) WriteSessions(ctx context.Context, sessions []*model.Sessi
 			SecureID:           session.SecureID,
 			Identified:         session.Identified,
 			Identifier:         session.Identifier,
+			IP:                 session.IP,
 			City:               session.City,
 			Country:            session.Country,
 			OSName:             session.OSName,
